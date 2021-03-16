@@ -6,7 +6,7 @@ Es un programa basado principalmente en dar información acerca de la Champions 
 
 Daniel Mayas Yuste; @Danileganes06.
 David Miragallas Serrano; @Miragallas.
-Pablo Cantin Fabre; @tcantin8.
+Pablo Cantin Fabre; @pcantin8.
 
 ## Objetivos del trabajo
 
