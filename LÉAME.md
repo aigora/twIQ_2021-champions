@@ -1,6 +1,6 @@
-# [Título del trabajo]
+#  Champions
 
-[Descripción breve del proyecto a realizar (2-3 frases).]
+Es un programa basado principalmente en dar información acerca de la Champions (ya que te da juego a poder ver información sobre los equipos, sus jugadores o estadísticas generales de la competición,entre otras cosas), aunque también te da la opción de simular un partido entre los 5 grandes de Europa. 
 
 ## Integrantes del equipo
 
