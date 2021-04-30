@@ -1,15 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main () {
 //Trabajo realizado por David Miragallas, Daniel Mayas y Pablo Cantin.	
 
-	
 	int  alternativa;
+	char aux;
+	
 do{
  	
+
 	
-	
-	char letra,opcion;
-	int eleccion;
+	char letra,op,el;
+	int eleccion,opcion,equipo;
 	printf("\t \t BIENVENIDO AL CONSULTORIO DE INFORMACION DE LA LIGA DE CAMPEONES\n");
 
 
@@ -23,7 +25,6 @@ do{
 	 
 	if (eleccion==1){
 		 
-	printf("Aqui se programaria la consulta de grupos.\n");
 printf("||      Grupo A        ||        Grupo B            ||      Grupo C        ||       Grupo D       ||\n");
 printf("----------------------------------------------------------------------------------------------------\n");
 printf("||   Bayern Munchen    ||      Real Madrid          ||      FC Porto       ||      Liverpool      ||\n"); 
@@ -32,7 +33,7 @@ printf("||     Salzburgo       ||     Inter de Milan        || Olympique Marseil
 printf("||  Lokomotiv Movska   || Borussia Monchedgladbach  ||     Olympiacos      ||     Midtjylland     ||\n");
 printf("||---------------------||---------------------------||---------------------||---------------------||\n");
 printf("||---------------------||---------------------------||---------------------||---------------------||\n");
-printf("||     Grupo E         ||          Grupo F          ||        Grupo G      ||       Grupo F       ||\n");
+printf("||     Grupo E         ||          Grupo F          ||        Grupo G      ||       Grupo H       ||\n");
 printf("----------------------------------------------------------------------------------------------------\n");
 printf("||    Chelsea FC       ||      Borussia Dortmund    ||     FC Barcelona    ||         PSG         ||\n");
 printf("||    Sevilla FC       ||           Lazio           ||       Juventus      ||   Manchester United ||\n");
@@ -40,15 +41,44 @@ printf("||    Stade Rennais    ||           Zenit           ||      Dinamo Kiev 
 printf("||   FK Krasnodar      ||          Brujas           ||     Ferencvarosi    || Istanbul Basaksehir ||\n");
 printf("||---------------------||---------------------------||---------------------||---------------------||\n");
 printf("||---------------------||---------------------------||---------------------||---------------------||\n");
-printf("Elige grupo\n");
-scanf("%c",&opcion);
 
-printf(" Una vez seleccionado el grupo, podras elegir mas opciones individualizadas dependiendo del grupo, equipo o jugador que elijas\n");
+printf("Elija una opcion\n");
+printf("Elige grupo pulse 1\n");
+printf("Estadistica pulse 2\n");
+scanf("%d",&opcion);
+fflush(stdin);
 
-switch (opcion){
+if (opcion==1){
+	printf("Elija grupo\n");
+	scanf("%c",&op);
+	fflush(stdin);
+
+switch (op){
 	case 'A':
 	case 'a':
 		printf(" Bayern Munich\n Atletico de Madrid\n Lokomotiv Moskva\n Salzburg\n");
+		printf("\n");
+		printf("\n");
+		printf("\n");
+		printf("Elija equipo:\n");
+		printf("Bayern Munich pulse 1\n");
+		printf("Patetico de Madrid pulse 2\n");
+		printf("Lokomotiv Moskva pulse 3\n");
+		printf("Salzburg pulse 4\n");
+		printf("Si quiere ver estadisticas generales del grupo pulse 5:\n");
+		printf("Si quiere ver los resultados de los equipos en la fase de grupos pulse 6:\n");
+		printf("Si quiere ver la clasificacion del grupo pulse 7:\n");
+		scanf("%d",&equipo);
+		fflush(stdin);
+		if(equipo==1){
+			printf("            neuer\n");
+			printf("Pavard\t"); printf("Sule\t");    printf("Alaba\t");   printf("Davies\n");
+			printf("      Kimmich       Goretzka\n");
+			printf("Sane         Muller        Coman\n");
+			printf("           Lewandowski\n");
+					
+		}
+
 	   	break;
 	case 'B':
 	case 'b':
@@ -79,18 +109,36 @@ switch (opcion){
 		printf(" PSG\n Manchester United\n RB Leipzig\n Istanbul Basaksehir");
 		break;
 	 default:
-	     printf("No ha escogido una opción correcta, por favor introduzca un nivel de dificultad:\n");
-	      scanf("%c",&opcion);	
+	     printf("No ha escogido una opción correcta:\n");
+	      scanf("%c",&op);	
 	      
+}
 
+
+}else if(opcion==2){
+	
+ 	FILE * f = fopen("Estadistica.txt","r");	
+		if(f == NULL ){
+			printf("ERROR\n");
+			return 0;
+}
+		
+	while(aux != EOF){
+		aux=fgetc(f);
+		printf("%c",aux);
+}
+	printf("\n");
+		fclose(f);
+		
+		
 }
 	
 }else if(eleccion==2){
 	printf("S) Simulacion de juego\n");
 	printf("P) Prediccion de ganador\n");
-	scanf("%c",&opcion);
+	scanf("%c",&el);
 	fflush(stdin);
-	switch (opcion){
+	switch (el){
 	case 'S':
 	case 's':	
 		printf("Aqui te llevaria a la eleccion de 5 equipos de la Champions \n");
