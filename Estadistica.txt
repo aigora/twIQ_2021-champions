@@ -1,4 +1,4 @@
-Goleadores:    Goles   |   Partidos jugados ||     Asistentes:         Asistencias   |    Partidos jugados ||      
+      Goleadores:    Goles   |   Partidos jugados ||     Asistentes:         Asistencias   |    Partidos jugados ||      
                              |                    ||                                       |                     ||
 -->Erling Haaland     10     |         8          ||     -->Juan Cuadrado        6         |           6         ||
 -->Kylian Mbappe      8      |         10         ||     -->Joshua Kimmich       4         |           7         || 
