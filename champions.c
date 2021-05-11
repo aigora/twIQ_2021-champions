@@ -62,7 +62,7 @@ switch (op){
 		printf("\n");
 		printf("Elija equipo:\n");
 		printf("Bayern Munich pulse 1\n");
-		printf("Patetico de Madrid pulse 2\n");
+		printf("Atletico de Madrid pulse 2\n");
 		printf("Lokomotiv Moskva pulse 3\n");
 		printf("Salzburg pulse 4\n");
 		printf("Si quiere ver estadisticas generales del grupo pulse 5:\n");
