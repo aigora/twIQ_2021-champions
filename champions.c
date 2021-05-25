@@ -124,9 +124,9 @@ printf("||   FK Krasnodar      ||          Brujas           ||     Ferencvarosi 
 printf("||---------------------||---------------------------||---------------------||---------------------||\n");
 printf("||---------------------||---------------------------||---------------------||---------------------||\n");
 
-printf("Elija una opcion\n");
-printf("Elige grupo pulse 1\n");
-printf("Estadistica pulse 2\n");
+printf("Elija una opcion:\n");
+printf("Si quiere eligir grupo pulse 1\n");
+printf("Si quiere ver las estadisticas generales de la Champions pulse 2\n");
 scanf("%d",&opcion);
 fflush(stdin);
 
