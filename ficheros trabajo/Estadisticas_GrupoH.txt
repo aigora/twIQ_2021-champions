@@ -1,0 +1,13 @@
+
+Neymar;9;6;2
+Mbappe;10;8;3
+Di Maria;10;1;4
+De Gea;5;0;0
+Bruno Fernandes;6;4;2
+Rashford;6;6;0
+Dani Olmo;8;1;0
+Angelino;7;3;3
+Poulsen;8;1;1
+Visca;5;1;2
+Turuc;6;1;1
+Crivelli;4;0;0
