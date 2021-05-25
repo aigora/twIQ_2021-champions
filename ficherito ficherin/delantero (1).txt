@@ -1,0 +1,20 @@
+delantero:
+
+1-Mbappe-------------> PSG
+2-Luis Suarez--------> Atletico De Madrid
+3-Benzema------------> Real Madrid
+4-Lewandowski--------> Bayern De Munich
+5-Werner-------------> Chelsea
+6-Mane---------------> Liverpool
+7-Salah--------------> Liverpool
+8-Neymar-------------> PSG
+9-Messi--------------> Barcelona
+10-Aguero------------> Manchester City
+11-Cristiano Ronaldo-> Juventus
+12-Joao Felix--------> Atletico De Madrid
+13-Cavani------------> Manchester United
+14-Lukaku------------> Inter De Milan
+15-Lautaro Martinez--> Inter De Milan
+16-Griezmann---------> Barcelona
+17-Hazard------------> Real Madrid
+18-Rashford----------> Manchester United

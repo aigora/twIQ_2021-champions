@@ -1,0 +1,25 @@
+PSG 1-2 Manchester United
+Leipzig 2-0 Istambul Basaksehir
+
+Istambul Basaksehir 0-2 PSG
+Manchester United 5-0 Leipzig
+
+Istanbul Basaksehir 2-1 Manchester United
+Leipzig 2-1 PSG
+
+PSG 1-0 Leipzig
+Manchester United 4-1 Istanbul Basaksehir
+
+Istanbul Basaksehir 3-4 Leipzig
+Manchester United 1-3 PSG
+
+Leipzig 3-2 Manchester United
+PSG 5-1 Istanbul Basaksehir
+
+1.PSG
+2.Leipzig
+3.Manchester United
+4.Istanbul Basaksehir
+
+
+

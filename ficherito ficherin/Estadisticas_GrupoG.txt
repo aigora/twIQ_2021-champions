@@ -1,0 +1,12 @@
+Supriaha;6;0;0
+Tsygankov;5;2;0
+De Pena;6;1;0
+Morata;8;6;1
+Cuadrado;6;0;6
+Cristiano Ronaldo;6;4;2
+Messi;6;5;1
+Ansu Fati;3;1;2
+De Jong;7;0;1
+Nguen;6;1;0
+Siger;5;0;0
+Isael;6;0;0

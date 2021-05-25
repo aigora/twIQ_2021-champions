@@ -1,0 +1,21 @@
+
+Muller;9;2;2
+Lewandowski;6;5;0
+Kimmich;7;1;4
+Marcos Llorente;8;4;2
+Luis Suarez;6;0;0
+Felipe;5;0;0
+Ze Luis;6;0;0
+Eder;6;0;0
+Rybus;6;1;1
+Berisha;6;5;1
+Szoboslai;6;2;0
+Camara;5;0;0
+                 
+
+
+
+
+
+
+

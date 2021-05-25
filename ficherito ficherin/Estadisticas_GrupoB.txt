@@ -1,0 +1,13 @@
+
+Sergio Ramos;5;2;1
+Marco Asensio;11;2;0
+Karim Benzema;10;6;0
+Tete;6;1;1
+Solomon;6;2;0
+Dentinho;4;1;0
+Achraf Hakimi;5;0;1
+Lukaku;5;4;0
+Lautaro Martinez;6;1;1
+Thuram;8;2;2
+Embolo;7;1;0
+Stindl;8;2;2

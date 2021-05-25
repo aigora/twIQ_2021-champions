@@ -1,0 +1,23 @@
+Manchester City 3-1 Porto	 
+Olympiacos 1-0 O.Marseille
+
+O. Marseille 0-3 Manchester City	 
+Porto 2-0 Olympiacos
+
+Manchester City 3-0 Olympiacos
+Porto 3-0 O.Marseille
+
+Olympiacos 0-1 Manchester City
+O.Marseille 0-2 Porto
+
+Porto 0-0 Manchester City
+O.Marseille 2-1 Olympiacos
+
+Manchester City 3-0 O.Marseille
+Olympiacos 0-2 Porto
+
+1.Manchester City
+2.Porto
+3.Olympiacos
+4.O.Marseille
+
