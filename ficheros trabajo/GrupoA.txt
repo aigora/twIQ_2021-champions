@@ -1,24 +1,24 @@
-Salzburgo 2-2 Lokomotiv Moscú
-Bayern Múnich 4-0 Atlético
+Salzburgo 2-2 Lokomotiv Moscu
+Bayern Munich 4-0 Atletico
 
-Lokomotiv Moscú 1-2 Bayern Múnich	 
-Atlético 3-2 Salzburgo
+Lokomotiv Moscu 1-2 Bayern Munich	 
+Atletico 3-2 Salzburgo
 
-Lokomotiv Moscú 1-1 Atlético	 
-Salzburgo 2-6 Bayern Múnich
+Lokomotiv Moscu 1-1 Atletico	 
+Salzburgo 2-6 Bayern Munich
 
-Bayern Múnich 3-1 Salzburgo
-Atlético 0-0 Lokomotiv Moscú
+Bayern Munich 3-1 Salzburgo
+Atletico 0-0 Lokomotiv Moscu
 
-Lokomotiv Moscú 1-3 Salzburgo	 
-Atlético 1-1 Bayern Múnich
+Lokomotiv Moscu 1-3 Salzburgo	 
+Atletico 1-1 Bayern Munich
 
-Salzburgo 0-2 Atlético 
-Bayern Múnich 2-0 Lokomotiv Moscú
+Salzburgo 0-2 Atletico 
+Bayern Munich 2-0 Lokomotiv Moscu
 
 
 1.Bayern	
-2.Atlético
+2.Atletico
 3.Salzburgo
 4.Lokomotiv
 
