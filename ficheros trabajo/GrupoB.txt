@@ -1,22 +1,24 @@
 R. Madrid 2-3 Shakhtar D.	 
-Inter Milán 2-2 Borussia MG
+Inter Milan 2-2 Borussia MG
 
-Shakhtar D. 0-0 Inter Milán	 
+Shakhtar D. 0-0 Inter Milan	 
 Borussia MG 2-2 R. Madrid
 
 Shakhtar D. 0-6 Borussia MG 
-R. Madrid 3-2 Inter Milán
+R. Madrid 3-2 Inter Milan
 
 Borussia MG 4-0 Shakhtar D.	 
-Inter Milán 0-2 R. Madrid
+Inter Milan 0-2 R. Madrid
 
 Shakhtar D. 2-0 R. Madrid	 
-Borussia MG 2-3 Inter Milán
+Borussia MG 2-3 Inter Milan
 
-Inter Milán 0-0 Shakhtar D.	 
+Inter Milan 0-0 Shakhtar D.	 
 R. Madrid 2-0 Borussia MG
 
+Clasificacion del grupo:
+
 1.Real Madrid
-2.B. Mönchengladbach
+2.B. Monchengladbach
 3.Shakhtar Donetsk
-4.Inter Milán
+4.Inter Milan
