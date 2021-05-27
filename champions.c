@@ -72,7 +72,7 @@ int main (void) {
 //Trabajo realizado por David Miragallas, Daniel Mayas y Pablo Cantin.	
 
 	int  alternativa;
-	char aux,aux2,aux3,aux4;
+	char aux1,aux2,aux3,aux4,aux5,aux6,aux7,aux8,aux9,aux10,aux11,aux12,aux13,aux14;
 	char jugador1;
 	char jugador2;
 	int eleccion;
@@ -240,9 +240,9 @@ switch (op){
 			return 0;
 }
 		
-	while(aux != EOF){
-		aux=fgetc(f2);
-		printf("%c",aux);
+	while(aux1 != EOF){
+		aux1=fgetc(f2);
+		printf("%c",aux1);
 }
 	printf("\n");
 		fclose(f2);	
@@ -346,9 +346,9 @@ switch (op){
 			return 0;
 }
 		
-	while(aux != EOF){
-		aux=fgetc(f4);
-		printf("%c",aux);
+	while(aux2 != EOF){
+		aux2=fgetc(f4);
+		printf("%c",aux2);
 }
 	printf("\n");
 		fclose(f4);
@@ -447,9 +447,9 @@ switch (op){
 			return 0;
 }
 		
-	while(aux != EOF){
-		aux=fgetc(f6);
-		printf("%c",aux);
+	while(aux3 != EOF){
+		aux3=fgetc(f6);
+		printf("%c",aux3);
 }
 	printf("\n");
 		fclose(f6);
@@ -548,9 +548,9 @@ switch (op){
 			return 0;
 }
 		
-	while(aux != EOF){
-		aux=fgetc(f8);
-		printf("%c",aux);
+	while(aux4 != EOF){
+		aux4=fgetc(f8);
+		printf("%c",aux4);
 }
 	printf("\n");
 		fclose(f8);		
@@ -653,9 +653,9 @@ switch (op){
 			return 0;
 }
 		
-	while(aux != EOF){
-		aux=fgetc(f21);
-		printf("%c",aux);
+	while(aux5 != EOF){
+		aux5=fgetc(f21);
+		printf("%c",aux5);
 }
 	printf("\n");
 		fclose(f21);		
@@ -756,9 +756,9 @@ switch (op){
 			return 0;
 }
 		
-	while(aux != EOF){
-		aux=fgetc(f11);
-		printf("%c",aux);
+	while(aux6 != EOF){
+		aux6=fgetc(f11);
+		printf("%c",aux6);
 }
 	printf("\n");
 		fclose(f11);		
@@ -860,9 +860,9 @@ switch (op){
 			return 0;
 }
 		
-	while(aux != EOF){
-		aux=fgetc(f13);
-		printf("%c",aux);
+	while(aux7 != EOF){
+		aux7=fgetc(f13);
+		printf("%c",aux7);
 }
 	printf("\n");
 		fclose(f13);	
@@ -966,9 +966,9 @@ switch (op){
 			return 0;
 }
 		
-	while(aux != EOF){
-		aux=fgetc(f15);
-		printf("%c",aux);
+	while(aux8 != EOF){
+		aux8=fgetc(f15);
+		printf("%c",aux8);
 }
 	printf("\n");
 		fclose(f15);
@@ -991,9 +991,9 @@ switch (op){
 			return 0;
 }
 		
-	while(aux != EOF){
-		aux=fgetc(f16);
-		printf("%c",aux);
+	while(aux9 != EOF){
+		aux9=fgetc(f16);
+		printf("%c",aux9);
 }
 	printf("\n");
 		fclose(f16);
@@ -1048,7 +1048,7 @@ switch (op){
 	char *palabra = obtieneAlAzar(palabras, tamanyo); 
 	printf("el ganador es el: %s\n", palabra); 
 	
-    } else if((jugador1=='1' && jugador2=='4')||(jugador1=='4'&& jugador2=='1')){
+        } else if((jugador1=='1' && jugador2=='4')||(jugador1=='4'&& jugador2=='1')){
 		srand(time(NULL));
 		
 	char *palabras[] = {"PSG", "Real Madrid"}; 
@@ -1132,9 +1132,9 @@ switch (op){
 		return 0;
 }
 		
-	while(aux != EOF){
-		aux=fgetc(f17);
-		printf("%c",aux);
+	while(aux10 != EOF){
+		aux10=fgetc(f17);
+		printf("%c",aux10);
 }
 	printf("\n");
 		fclose(f17);
@@ -1216,9 +1216,9 @@ switch (op){
 		return 0;
 }
 		
-	while(aux != EOF){
-		aux=fgetc(f20);
-		printf("%c",aux);
+	while(aux11 != EOF){
+		aux11=fgetc(f20);
+		printf("%c",aux11);
 }
 	printf("\n");
 		fclose(f20);
@@ -1233,9 +1233,9 @@ switch (op){
 		return 0;
 }
 		
-	while(aux2 != EOF){
-		aux2=fgetc(f21);
-		printf("%c",aux2);
+	while(aux12 != EOF){
+		aux12=fgetc(f21);
+		printf("%c",aux12);
 }
 	printf("\n");
 		fclose(f21);
@@ -1257,9 +1257,9 @@ switch (op){
 		return 0;
 }
 		
-	while(aux3 != EOF){
-		aux3=fgetc(f22);
-		printf("%c",aux3);
+	while(aux13 != EOF){
+		aux13=fgetc(f22);
+		printf("%c",aux13);
 }
 	printf("\n");
 		fclose(f22);
@@ -1281,9 +1281,9 @@ switch (op){
 		return 0;
 }
 		
-	while(aux4 != EOF){
-		aux4=fgetc(f23);
-		printf("%c",aux4);
+	while(aux14 != EOF){
+		aux14=fgetc(f23);
+		printf("%c",aux14);
 }
 	printf("\n");
 		fclose(f23);
