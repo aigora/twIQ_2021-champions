@@ -70,7 +70,7 @@ typedef struct{
 
 int main (void) {
 //Trabajo realizado por David Miragallas, Daniel Mayas y Pablo Cantin.	
-
+	system("color 3");
 	int  alternativa;
 	char aux1,aux2,aux3,aux4,aux5,aux6,aux7,aux8,aux9,aux10,aux11,aux12,aux13,aux14;
 	char jugador1;
@@ -1150,26 +1150,26 @@ switch (op){
 	fflush(stdin);
 	
 //Pide elegir un equipo entre los dados y se va guardando la variable en el fichero hasta el ganador
-	printf("\nElige al ganador entre bayern y Lazio (Octavos de final 1): ");gets(equipo1);
-	printf("Elige al ganador entre Psg y Barcelona (Octavos de final 2): "); gets(equipo2); 
-	printf("Elige al ganador entre city y monchedgladbach (Octavos de final 3): "); gets(equipo3); 
-	printf("Elige al ganador entre borussia y Sevilla (Octavos de final 4): "); gets(equipo4); 
-	printf("Elige al ganador entre madrid y Atalanta (Octavos de final 5): " ); gets(equipo5); 
-	printf("Elige al ganador entre liverpool y Leipzig (Octavos de final 6): "); gets(equipo6); 
-	printf("Elige al ganador entre Oporto y Juventus (Octavos de final 7): "); gets(equipo7); 
-	printf("Elige al ganador entre Chelsea y Atletico de Madrid (Octavos de final 8): "); gets(equipo8); 
+	printf("\nQuien ganara entre Bayern Munchen y Lazio? (Octavos de final 1): ");gets(equipo1);
+	printf("Quien ganara entre Psg y FC Barcelona (Octavos de final 2): "); gets(equipo2); 
+	printf("Quien ganara entre Manchester City y Borussia Monchedgladbach (Octavos de final 3): "); gets(equipo3); 
+	printf("Quien ganara entre Borussia Dortmund y Sevilla (Octavos de final 4): "); gets(equipo4); 
+	printf("Quien ganara entre Real Madrid y Atalanta (Octavos de final 5): " ); gets(equipo5); 
+	printf("Quien ganara entre Liverpool y Leipzig (Octavos de final 6): "); gets(equipo6); 
+	printf("Quien ganara entre Oporto y Juventus (Octavos de final 7): "); gets(equipo7); 
+	printf("Quien ganara entre Chelsea y Atletico de Madrid (Octavos de final 8): "); gets(equipo8); 
 	
-	printf("\nElige al ganador entre %s y %s (Cuartos de final 1): ", equipo1, equipo2); gets(equipo9); 
-	printf("Elige al ganador entre %s y %s (Cuartos de final 2): ", equipo3, equipo4); gets(equipo10); 
-	printf("Elige al ganador entre %s y %s (Cuartos de final 3): ", equipo5, equipo6); gets(equipo11); 
-	printf("Elige al ganador entre %s y %s (Cuartos de final 4): ", equipo7, equipo8); gets(equipo12); 
+	printf("\nQuien ganara entre %s y %s (Cuartos de final 1): ", equipo1, equipo2); gets(equipo9); 
+	printf("Quien ganara entre %s y %s (Cuartos de final 2): ", equipo3, equipo4); gets(equipo10); 
+	printf("Quien ganara entre %s y %s (Cuartos de final 3): ", equipo5, equipo6); gets(equipo11); 
+	printf("Quien ganara entre %s y %s (Cuartos de final 4): ", equipo7, equipo8); gets(equipo12); 
 	
-	printf("\nElige al ganador entre %s y %s (Semifinal 1): ", equipo9, equipo10); gets(equipo13); 
-	printf("Elige al ganador entre %s y %s (Semifinal 2): ", equipo11, equipo12); gets(equipo14); 
+	printf("\nQuien ganara entre %s y %s (Semifinal 1): ", equipo9, equipo10); gets(equipo13); 
+	printf("Quien ganara entre %s y %s (Semifinal 2): ", equipo11, equipo12); gets(equipo14); 
 	
-	printf("\nElige al ganador entre %s y %s (Final): ", equipo13, equipo14); gets(equipo15); 
+	printf("\nQuien ganara entre %s y %s (Final): ", equipo13, equipo14); gets(equipo15); 
 	
-	printf("Tu campeon de la Champions es: %s", equipo15); 
+	printf("%s se ha proclamado campeon de la mejor competicion de clubes: la Uefa Champions League.\n", equipo15); 
 	
 	//Se guarda en el fichero correspondiente los equipos clasificados en las eliminatorias anteriores
 	fprintf(pf18, "Clasificado Octavos de final 1: %s\n", equipo1);
@@ -1191,7 +1191,7 @@ switch (op){
 	
 	fprintf(pf18, "\nCampeon de la Champions: %s\n", equipo15);
 	//Una vez terminado el juego podras ver en el fichero correpondiente todos tus resultados
-	printf("\n\nAhora podras ver tu eleccion en el fichero ""minijuego-prediccion.txt""");
+	printf("\n\nAhora podras ver tu eleccion en el fichero ""minijuego-prediccion(w).txt""");
 	
 	fclose(pf18); //Cierra el fichero
 	 	break;
@@ -1225,7 +1225,7 @@ switch (op){
     printf("Elija portero:\n");
 	gets(jugadores1);
 	fflush(stdin);
-	system("pause");
+	
 
 	FILE * f21 = fopen("defensa.txt","r");	
 	if(f21 == NULL ){
@@ -1238,8 +1238,8 @@ switch (op){
 		printf("%c",aux12);
 }
 	printf("\n");
-		fclose(f21);
-	system("cls");
+	fclose(f21);
+	
 	printf("Elija el lateral derecho: \n");
 	gets(jugadores2);
 	printf("Elija primer central: \n");
@@ -1264,7 +1264,6 @@ switch (op){
 	printf("\n");
 		fclose(f22);
 		
-	system("cls");
 
 	printf("Elija el primer mediocentro : \n");
 	gets(jugadores6);
@@ -1288,7 +1287,6 @@ switch (op){
 	printf("\n");
 		fclose(f23);
 	
-	system("cls");
 
 	printf("Elija extremo derecho: \n");
 	gets(jugadores9);
@@ -1298,7 +1296,6 @@ switch (op){
 	gets(jugadores11);
 	
 	fflush(stdin);
-	system("cls");
 
 	
 			
@@ -1315,7 +1312,7 @@ switch (op){
 			  	
 	printf("\n");
 
-	printf("Si quiere ver toda su eleccion en el once ideal puede consultarlo en el fichero ""once.txt""");
+	printf("Si quiere ver toda su eleccion en el once ideal puede consultarlo en el fichero ""onceideal(w).txt""");
 	
 	printf("\n");
 
