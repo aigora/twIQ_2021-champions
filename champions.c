@@ -125,8 +125,8 @@ printf("||---------------------||---------------------------||------------------
 printf("||---------------------||---------------------------||---------------------||---------------------||\n");
 
 printf("Elija una opcion:\n");
-printf("Si quiere eligir grupo pulse 1\n");
-printf("Si quiere ver las estadisticas generales de la Champions pulse 2\n");
+printf("Si quiere elegir grupo pulse 1\n");
+printf("Si quiere ver las estadisticas globales de la Champions pulse 2\n");
 scanf("%d",&opcion);
 fflush(stdin);
 
@@ -146,7 +146,7 @@ switch (op){
 		for(i=0; i<cont; i++){ //Muestra los equipos del Grupo A
 			printf("%d. %s", i+1, vector[i].nombre);
 			}
-		printf("\nBayern Munich\n Atletico de Madrid\n Lokomotiv Moskva\n Salzburg\n");
+		printf("\n Bayern Munich\n Atletico de Madrid\n Lokomotiv Moskva\n Salzburg\n");
 		printf("\n");
 		printf("\n");
 		printf("\n");
@@ -166,6 +166,7 @@ switch (op){
 			printf("      Kimmich       Goretzka\n");
 			printf("Sane         Muller        Coman\n");
 			printf("           Lewandowski\n");
+			printf("\n");
 					
 		}
         	else if(equipo==2){
@@ -187,6 +188,7 @@ switch (op){
 			printf("Kristensen\t");    printf("Andre Ramalho\t");       printf("Wober\t");      printf("Ulmer\n");	
 			printf("Mwepu    Camara       Junuzovic        Szoboszlai\n");
 			printf("             Berisha        Koita\n");
+			printf("\n");
 				
 		}
 			else if(equipo==5){
@@ -228,6 +230,7 @@ switch (op){
 	
 	//Cierra el fichero 
 	fclose(f1);
+	printf("\n");
 			}
 			else if(equipo==6){
 		//Se abre el fichero
@@ -264,6 +267,7 @@ switch (op){
 		printf(" Shaktar Donetsk pulse 2\n");
 		printf("Inter de Milan pulse 3\n");
 		printf("Borussia Monchedgladbach pulse 4\n");
+		printf("\n");
 		imprimirBanner();
 		scanf("%d",&equipo);
 		fflush(stdin);
@@ -332,6 +336,7 @@ switch (op){
 	printf("\nNombre: %s\nPartidos: %d\nGoles: %d\nAsistencias: %d\n", stats[j].nombre, stats[j].partidos, stats[j].goles, stats[j].asistencias);
 
 	fclose(f2);
+	printf("\n");
 			}
 			else if(equipo==6){
 				
@@ -1050,6 +1055,8 @@ switch (op){
 	int tamanyo = sizeof(palabras) / sizeof(char *); 
 	char *palabra = obtieneAlAzar(palabras, tamanyo); 
 	printf("el ganador es el: %s\n", palabra); 
+	printf("\n");
+
 	
 	} else if((jugador1=='1' && jugador2=='5')||(jugador1=='5'&& jugador2=='1')){
 		srand(time(NULL));
@@ -1058,6 +1065,8 @@ switch (op){
 	int tamanyo = sizeof(palabras) / sizeof(char *); 
 	char *palabra = obtieneAlAzar(palabras, tamanyo); 
 	printf("el ganador es el: %s\n", palabra); 
+	printf("\n");
+
 	
 	} else if((jugador1=='2' && jugador2=='4')||(jugador1=='4'&& jugador2=='2')){
 		srand(time(NULL));
@@ -1065,7 +1074,9 @@ switch (op){
 	char *palabras[] = {"Bayern Munchen", "Real Madrid"}; 
 	int tamanyo = sizeof(palabras) / sizeof(char *); 
 	char *palabra = obtieneAlAzar(palabras, tamanyo); 
-	printf("El ganador es el: %s\n", palabra); 
+	printf("El ganador es el: %s\n", palabra);
+	printf("\n");
+ 
 	
 	} else if((jugador1=='2' && jugador2=='5')||(jugador1=='5'&& jugador2=='2')){
 		srand(time(NULL));
@@ -1074,6 +1085,8 @@ switch (op){
 	int tamanyo = sizeof(palabras) / sizeof(char *); 
 	char *palabra = obtieneAlAzar(palabras, tamanyo); 
 	printf("El ganador es el: %s\n", palabra); 
+	printf("\n");
+
 	
 	} else if((jugador1=='3' && jugador2=='4')||(jugador1=='4'&& jugador2=='3')){
 		srand(time(NULL));
@@ -1082,6 +1095,8 @@ switch (op){
 	int tamanyo = sizeof(palabras) / sizeof(char *); 
 	char *palabra = obtieneAlAzar(palabras, tamanyo); 
 	printf("El ganador es el: %s\n", palabra); 
+	printf("\n");
+
 	
 	} else if((jugador1=='3' && jugador2=='5')||(jugador1=='5'&& jugador2=='3')){
 		srand(time(NULL));
@@ -1090,6 +1105,7 @@ switch (op){
 	int tamanyo = sizeof(palabras) / sizeof(char *); 
 	char *palabra = obtieneAlAzar(palabras, tamanyo); 
 	printf("El ganador es el: %s\n", palabra); 
+	printf("\n");
 	
 	} else if((jugador1=='5' && jugador2=='4')||(jugador1=='4'&& jugador2=='5')){
 		srand(time(NULL));
@@ -1098,10 +1114,13 @@ switch (op){
 	int tamanyo = sizeof(palabras) / sizeof(char *); 
 	char *palabra = obtieneAlAzar(palabras, tamanyo); 
 	printf("El ganador es el: %s\n", palabra); 
+	printf("\n");
+
 	} 
 	else if ((jugador1=='1' && jugador2=='1')||(jugador1=='2'&& jugador2=='2')||(jugador1=='3'&& jugador2=='3')||(jugador1=='4'&& jugador2=='5')||(jugador1=='5'&& jugador2=='5')){
 	printf("Habeis quedado empate\n");
 	}
+	printf("\n");
 	 	break;
 	 	//Aqui comenzara el segundo minijuego de realizar la champions desde octavos de final por el jugador 
 	case 'c':
@@ -1220,13 +1239,14 @@ switch (op){
 }
 	printf("\n");
 		fclose(f14);
-	printf("Elija defensas: \n");
+	system("cls");
+	printf("Elija el lateral derecho: \n");
 	gets(jugadores2);
-	printf("Elija defensas: \n");
+	printf("Elija primer central: \n");
 	gets(jugadores3);
-	printf("Elija defensas: \n");
+	printf("Elija segundo central: \n");
 	gets(jugadores4);
-	printf("Elija defensas: \n");
+	printf("Elija lateral izquierdo: \n");
 	gets(jugadores5);
 	fflush(stdin);
 	system("pause");
@@ -1243,11 +1263,14 @@ switch (op){
 }
 	printf("\n");
 		fclose(f15);
-	printf("Elija mediocentro: \n");
+		
+	system("cls");
+
+	printf("Elija el primer mediocentro : \n");
 	gets(jugadores6);
-	printf("Elija mediocentro: \n");
+	printf("Elija el segundo centrocampista: \n");
 	gets(jugadores7);
-	printf("Elija mediocentro: \n");
+	printf("Elija el ultimo mediocentro: \n");
 	gets(jugadores8);
 	fflush(stdin);
 	system("pause");
@@ -1264,14 +1287,19 @@ switch (op){
 }
 	printf("\n");
 		fclose(f16);
-	printf("Elija delantero: \n");
+	
+	system("cls");
+
+	printf("Elija extremo derecho: \n");
 	gets(jugadores9);
-	printf("Elija delantero: \n");
+	printf("Elija delantero centro: \n");
 	gets(jugadores10);
-	printf("Elija delantero: \n");
+	printf("Elija el extremo izquierdo: \n");
 	gets(jugadores11);
 	
 	fflush(stdin);
+	system("cls");
+
 	
 			
 			printf("          %s\n",jugadores1);
@@ -1285,18 +1313,23 @@ switch (op){
               fprintf(f12,"%s\t",jugadores6);    fprintf(f12,"%s\t",jugadores7);   fprintf(f12,"%s\n",jugadores8);		
 			  	 fprintf(f12,"%s\t",jugadores9);    fprintf(f12,"%s\t",jugadores10);   fprintf(f12,"%s\n",jugadores11);
 			  	
+	printf("\n");
 
 	printf("Si quiere ver toda su eleccion en el once ideal puede consultarlo en el fichero ""once.txt""");
+	
+	printf("\n");
 
-fclose(f12);//Cierra el fichero creado
 
-		
+	fclose(f12);//Cierra el fichero creado
+
+	printf("\n");
+	
 	       
 break;
 	 	default:printf ("Ha introducido un valor incorrecto\n");
 		}
 		//Una vez terminado culquiera de los minijuegos te pregunta si quiere volver a jugar
-		printf("%cQuieres volver a jugar?\n",168);
+		printf("\n%cQuieres volver a jugar?\n",168);
 		printf("Pulse 1 en caso afirmativo; Pulse 2 si no quieres volver a jugar\n");
 		fflush(stdin);
 		scanf("%d", &opcion);
