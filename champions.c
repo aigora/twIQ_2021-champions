@@ -234,18 +234,18 @@ switch (op){
 			}
 			else if(equipo==6){
 		//Se abre el fichero
-		FILE * f17 = fopen("GrupoA.txt","r");	
-		if(f17 == NULL ){
+		FILE * f2 = fopen("GrupoA.txt","r");	
+		if(f2 == NULL ){
 			printf("ERROR\n");
 			return 0;
 }
 		
 	while(aux != EOF){
-		aux=fgetc(f17);
+		aux=fgetc(f2);
 		printf("%c",aux);
 }
 	printf("\n");
-		fclose(f17);	
+		fclose(f2);	
 			}
 			//En este caso sera lo mismo que en el apartado A
 	   	break;
@@ -302,14 +302,14 @@ switch (op){
 				
 				jugador stats[100];
 
-				FILE *f2 = fopen("Estadisticas_GrupoB.txt", "r");
+				FILE *f3 = fopen("Estadisticas_GrupoB.txt", "r");
 	
-	if(f2 == NULL){ 
+	if(f3 == NULL){ 
 		printf("ERROR");
 	}
 	
 
-	while(fscanf(f2, "%[^;]; %d; %d; %d; %[^\n] \n", stats[i].nombre, &stats[i].partidos, &stats[i].goles, &stats[i].asistencias, stats[i].jugadores) != EOF){
+	while(fscanf(f3, "%[^;]; %d; %d; %d; %[^\n] \n", stats[i].nombre, &stats[i].partidos, &stats[i].goles, &stats[i].asistencias, stats[i].jugadores) != EOF){
 		i++;
 	}
 		do{ 
@@ -335,23 +335,23 @@ switch (op){
 
 	printf("\nNombre: %s\nPartidos: %d\nGoles: %d\nAsistencias: %d\n", stats[j].nombre, stats[j].partidos, stats[j].goles, stats[j].asistencias);
 
-	fclose(f2);
+	fclose(f3);
 	printf("\n");
 			}
 			else if(equipo==6){
 				
-			FILE * f18 = fopen("GrupoB.txt","r");	
-		if(f18 == NULL ){
+			FILE * f4 = fopen("GrupoB.txt","r");	
+		if(f4 == NULL ){
 			printf("ERROR\n");
 			return 0;
 }
 		
 	while(aux != EOF){
-		aux=fgetc(f18);
+		aux=fgetc(f4);
 		printf("%c",aux);
 }
 	printf("\n");
-		fclose(f18);
+		fclose(f4);
 				
 			}
 		//En este caso sera lo mismo que en el apartado A
@@ -404,14 +404,14 @@ switch (op){
 			else if(equipo==5){
 				jugador stats[100];
 
-				FILE *f3 = fopen("Estadisticas_GrupoC.txt", "r");
+				FILE *f5 = fopen("Estadisticas_GrupoC.txt", "r");
 	
-	if(f3 == NULL){
+	if(f5 == NULL){
 		printf("ERROR");
 	}
 	
 	
-	while(fscanf(f3, "%[^;]; %[^;]; %d; %d; %d; %[^\n] \n", stats[i].nombre, &stats[i].partidos, &stats[i].goles, &stats[i].asistencias, stats[i].jugadores) != EOF){
+	while(fscanf(f5, "%[^;]; %[^;]; %d; %d; %d; %[^\n] \n", stats[i].nombre, &stats[i].partidos, &stats[i].goles, &stats[i].asistencias, stats[i].jugadores) != EOF){
 		i++;
 	}
 		do{  
@@ -437,22 +437,22 @@ switch (op){
 
 	printf("\nNombre: %s\nPosicion: %s\nPartidos: %d\nGoles: %d\nAsistencias: %d\n", stats[j].nombre, stats[j].partidos, stats[j].goles, stats[j].asistencias);
 
-	fclose(f3);
+	fclose(f5);
 			}
 			else if(equipo==6){
 				
-			FILE * f19 = fopen("GrupoC.txt","r");	
-		if(f19 == NULL ){
+			FILE * f6 = fopen("GrupoC.txt","r");	
+		if(f6 == NULL ){
 			printf("ERROR\n");
 			return 0;
 }
 		
 	while(aux != EOF){
-		aux=fgetc(f19);
+		aux=fgetc(f6);
 		printf("%c",aux);
 }
 	printf("\n");
-		fclose(f19);
+		fclose(f6);
 			}
 		//En este caso sera lo mismo que en el apartado A
 	     break;
@@ -505,14 +505,14 @@ switch (op){
 			else if(equipo==5){
 							jugador stats[100];
 
-				FILE *f4 = fopen("Estadisticas_GrupoD.txt", "r");
+				FILE *f7 = fopen("Estadisticas_GrupoD.txt", "r");
 	
-	if(f4 == NULL){ 
+	if(f7 == NULL){ 
 		printf("ERROR");
 	}
 	
 	
-	while(fscanf(f4, "%[^;]; %[^;]; %d; %d; %d; %[^\n] \n", stats[i].nombre, &stats[i].partidos, &stats[i].goles, &stats[i].asistencias, stats[i].jugadores) != EOF){
+	while(fscanf(f7, "%[^;]; %[^;]; %d; %d; %d; %[^\n] \n", stats[i].nombre, &stats[i].partidos, &stats[i].goles, &stats[i].asistencias, stats[i].jugadores) != EOF){
 		i++;
 	}
 		do{ 
@@ -538,22 +538,22 @@ switch (op){
 
 	printf("\nNombre: %s\nPosicion: %s\nPartidos: %d\nGoles: %d\nAsistencias: %d\n", stats[j].nombre, stats[j].partidos, stats[j].goles, stats[j].asistencias);
 
-	fclose(f4);
+	fclose(f7);
 			}
 			else if(equipo==6){
 			
-		FILE * f20 = fopen("GrupoD.txt","r");	
-		if(f20 == NULL ){
+		FILE * f8 = fopen("GrupoD.txt","r");	
+		if(f8 == NULL ){
 			printf("ERROR\n");
 			return 0;
 }
 		
 	while(aux != EOF){
-		aux=fgetc(f20);
+		aux=fgetc(f8);
 		printf("%c",aux);
 }
 	printf("\n");
-		fclose(f20);		
+		fclose(f8);		
 			}
 		//En este caso sera lo mismo que en el apartado A
 		break;
@@ -610,14 +610,14 @@ switch (op){
 			else if(equipo==5){
 		jugador stats[100];
 
-	FILE *f5 = fopen("Estadisticas_GrupoE.txt", "r");
+	FILE *f9 = fopen("Estadisticas_GrupoE.txt", "r");
 	
-	if(f5 == NULL){
+	if(f9 == NULL){
 		printf("ERROR");
 	}
 	
 
-	while(fscanf(f5, "%[^;]; %[^;]; %d; %d; %d; %[^\n] \n", stats[i].nombre, &stats[i].partidos, &stats[i].goles, &stats[i].asistencias, stats[i].jugadores) != EOF){
+	while(fscanf(f9, "%[^;]; %[^;]; %d; %d; %d; %[^\n] \n", stats[i].nombre, &stats[i].partidos, &stats[i].goles, &stats[i].asistencias, stats[i].jugadores) != EOF){
 		i++;
 	}
 		do{ 
@@ -643,7 +643,7 @@ switch (op){
 
 	printf("\nNombre: %s\nPosicion: %s\nPartidos: %d\nGoles: %d\nAsistencias: %d\n", stats[j].nombre, stats[j].partidos, stats[j].goles, stats[j].asistencias);
 
-	fclose(f5);
+	fclose(f9);
 			}
 			else if(equipo==6){
 				
@@ -715,12 +715,12 @@ switch (op){
 	
 				jugador stats[100];
 
-				FILE *f6 = fopen("Estadisticas_GrupoF.txt", "r");
+				FILE *f10 = fopen("Estadisticas_GrupoF.txt", "r");
 	
-	if(f6 == NULL){ 
+	if(f10 == NULL){ 
 		printf("ERROR");
 	}
-	while(fscanf(f6, "%[^;]; %[^;]; %d; %d; %d; %[^\n] \n", stats[i].nombre,  &stats[i].partidos, &stats[i].goles, &stats[i].asistencias, stats[i].jugadores) != EOF){
+	while(fscanf(f10, "%[^;]; %[^;]; %d; %d; %d; %[^\n] \n", stats[i].nombre,  &stats[i].partidos, &stats[i].goles, &stats[i].asistencias, stats[i].jugadores) != EOF){
 		i++;
 	}
 		do{
@@ -746,22 +746,22 @@ switch (op){
 	
 	printf("\nNombre: %s\nPosicion: %s\nPartidos: %d\nGoles: %d\nAsistencias: %d\n", stats[j].nombre, stats[j].partidos, stats[j].goles, stats[j].asistencias);
 
-	fclose(f6);
+	fclose(f10);
 		}
 		else if(equipo==6){
 				
-		FILE * f22 = fopen("GrupoF.txt","r");	
-		if(f22 == NULL ){
+		FILE * f11 = fopen("GrupoF.txt","r");	
+		if(f11 == NULL ){
 			printf("ERROR\n");
 			return 0;
 }
 		
 	while(aux != EOF){
-		aux=fgetc(f22);
+		aux=fgetc(f11);
 		printf("%c",aux);
 }
 	printf("\n");
-		fclose(f22);		
+		fclose(f11);		
 			}
 		//En este caso sera lo mismo que en el apartado A
 		break;
@@ -818,13 +818,13 @@ switch (op){
 				
 				jugador stats[100];
 
-				FILE *f7 = fopen("Estadisticas_GrupoG.txt", "r");
+				FILE *f12 = fopen("Estadisticas_GrupoG.txt", "r");
 	
-	if(f7 == NULL){ 
+	if(f12 == NULL){ 
 		printf("ERROR");
 	}
 	
-	while(fscanf(f7, "%[^;]; %[^;]; %d; %d; %d; %[^\n] \n", stats[i].nombre,  &stats[i].partidos, &stats[i].goles, &stats[i].asistencias, stats[i].jugadores) != EOF){
+	while(fscanf(f12, "%[^;]; %[^;]; %d; %d; %d; %[^\n] \n", stats[i].nombre,  &stats[i].partidos, &stats[i].goles, &stats[i].asistencias, stats[i].jugadores) != EOF){
 		i++;
 	}
 		do{
@@ -850,22 +850,22 @@ switch (op){
 
 	printf("\nNombre: %s\nPosicion: %s\nPartidos: %d\nGoles: %d\nAsistencias: %d\n", stats[j].nombre, stats[j].partidos, stats[j].goles, stats[j].asistencias);
 
-	fclose(f7);
+	fclose(f12);
 			}
 			else if(equipo==6){
 				
-		FILE * f23 = fopen("GrupoG.txt","r");	
-		if(f23 == NULL ){
+		FILE * f13 = fopen("GrupoG.txt","r");	
+		if(f13 == NULL ){
 			printf("ERROR\n");
 			return 0;
 }
 		
 	while(aux != EOF){
-		aux=fgetc(f23);
+		aux=fgetc(f13);
 		printf("%c",aux);
 }
 	printf("\n");
-		fclose(f23);	
+		fclose(f13);	
 			}
 		//En este caso sera lo mismo que en el apartado A
 		break;
@@ -924,13 +924,13 @@ switch (op){
 			
 			jugador stats[100];
 
-		FILE *f8 = fopen("Estadisticas_GrupoH.txt", "r");
+		FILE *f14 = fopen("Estadisticas_GrupoH.txt", "r");
 	
-	if(f8 == NULL){ 
+	if(f14 == NULL){ 
 		printf("ERROR");
 	}
 	
-	while(fscanf(f8, "%[^;]; %d; %d; %d; %[^\n] \n", stats[i].nombre, &stats[i].partidos, &stats[i].goles, &stats[i].asistencias, stats[i].jugadores) != EOF){
+	while(fscanf(f14, "%[^;]; %d; %d; %d; %[^\n] \n", stats[i].nombre, &stats[i].partidos, &stats[i].goles, &stats[i].asistencias, stats[i].jugadores) != EOF){
 		i++;
 	}
 		do{ 
@@ -956,22 +956,22 @@ switch (op){
 
 	printf("\nNombre: %s  \nPartidos: %d\nGoles: %d\nAsistencias: %d\n", stats[j].nombre, stats[j].partidos, stats[j].goles, stats[j].asistencias);
 
-	fclose(f8);
+	fclose(f14);
 			}
 			else if(equipo==6){
 				
-		FILE * f24 = fopen("GrupoH.txt","r");	
-		if(f24 == NULL ){
+		FILE * f15 = fopen("GrupoH.txt","r");	
+		if(f15 == NULL ){
 			printf("ERROR\n");
 			return 0;
 }
 		
 	while(aux != EOF){
-		aux=fgetc(f24);
+		aux=fgetc(f15);
 		printf("%c",aux);
 }
 	printf("\n");
-		fclose(f24);
+		fclose(f15);
 		
 		
 }	
@@ -985,18 +985,18 @@ switch (op){
 //Esta seria la parte de los minijuegos si el usuario ha escogido la opcion dos en el menu principal
 }else if(opcion==2){
 	
- 	FILE * f9 = fopen("Estadistica.txt","r");	
-		if(f9 == NULL ){
+ 	FILE * f16 = fopen("Estadistica.txt","r");	
+		if(f16 == NULL ){
 			printf("ERROR\n");
 			return 0;
 }
 		
 	while(aux != EOF){
-		aux=fgetc(f9);
+		aux=fgetc(f16);
 		printf("%c",aux);
 }
 	printf("\n");
-		fclose(f9);
+		fclose(f16);
 		
 		
 }
@@ -1126,24 +1126,24 @@ switch (op){
 	case 'c':
 	case 'C':;
 
-	FILE * f10 = fopen("Eliminatorias.txt","r");	
-	if(f10 == NULL ){
+	FILE * f17 = fopen("Eliminatorias.txt","r");	
+	if(f17 == NULL ){
 		printf("ERROR\n");
 		return 0;
 }
 		
 	while(aux != EOF){
-		aux=fgetc(f10);
+		aux=fgetc(f17);
 		printf("%c",aux);
 }
 	printf("\n");
-		fclose(f10);
+		fclose(f17);
 
-	FILE *pf11; 
+	FILE *pf18; 
 	
-	pf11 = fopen("minijuego-prediccion(w).txt", "w"); //Crea el fichero
+	pf18 = fopen("minijuego-prediccion(w).txt", "w"); //Crea el fichero
 	
-	if(pf11 == NULL){ //Salta un error si no se ha podido crear el fichero
+	if(pf18 == NULL){ //Salta un error si no se ha podido crear el fichero
 		printf("ERROR");
 	}
 
@@ -1172,73 +1172,73 @@ switch (op){
 	printf("Tu campeon de la Champions es: %s", equipo15); 
 	
 	//Se guarda en el fichero correspondiente los equipos clasificados en las eliminatorias anteriores
-	fprintf(pf11, "Clasificado Octavos de final 1: %s\n", equipo1);
-	fprintf(pf11, "Clasificado Octavos de final 2: %s\n", equipo2); 
-	fprintf(pf11, "Clasificado Octavos de final 3: %s\n", equipo3); 
-	fprintf(pf11, "Clasificado Octavos de final 4: %s\n", equipo4);
-	fprintf(pf11, "Clasificado Octavos de final 5: %s\n", equipo5); 
-	fprintf(pf11, "Clasificado Octavos de final 6: %s\n", equipo6); 
-	fprintf(pf11, "Clasificado Octavos de final 7: %s\n", equipo7);
-	fprintf(pf11, "Clasificado Octavos de final 8: %s\n", equipo8); 
+	fprintf(pf18, "Clasificado Octavos de final 1: %s\n", equipo1);
+	fprintf(pf18, "Clasificado Octavos de final 2: %s\n", equipo2); 
+	fprintf(pf18, "Clasificado Octavos de final 3: %s\n", equipo3); 
+	fprintf(pf18, "Clasificado Octavos de final 4: %s\n", equipo4);
+	fprintf(pf18, "Clasificado Octavos de final 5: %s\n", equipo5); 
+	fprintf(pf18, "Clasificado Octavos de final 6: %s\n", equipo6); 
+	fprintf(pf18, "Clasificado Octavos de final 7: %s\n", equipo7);
+	fprintf(pf18, "Clasificado Octavos de final 8: %s\n", equipo8); 
 	
-	fprintf(pf11, "\nClasificado Cuartos de final 1: %s\n", equipo9); 
-	fprintf(pf11, "Clasificado Cuartos de final 2: %s\n", equipo10);
-	fprintf(pf11, "Clasificado Cuartos de final 3: %s\n", equipo11); 
-	fprintf(pf11, "Clasificado Cuartos de final 4: %s\n", equipo12);
+	fprintf(pf18, "\nClasificado Cuartos de final 1: %s\n", equipo9); 
+	fprintf(pf18, "Clasificado Cuartos de final 2: %s\n", equipo10);
+	fprintf(pf18, "Clasificado Cuartos de final 3: %s\n", equipo11); 
+	fprintf(pf18, "Clasificado Cuartos de final 4: %s\n", equipo12);
 	
-	fprintf(pf11, "\nClasificado Semifinal 1: %s\n", equipo13); 
-	fprintf(pf11, "Clasificado Semifinal 2: %s\n", equipo14); 
+	fprintf(pf18, "\nClasificado Semifinal 1: %s\n", equipo13); 
+	fprintf(pf18, "Clasificado Semifinal 2: %s\n", equipo14); 
 	
-	fprintf(pf11, "\nCampeon de la Champions: %s\n", equipo15);
+	fprintf(pf18, "\nCampeon de la Champions: %s\n", equipo15);
 	//Una vez terminado el juego podras ver en el fichero correpondiente todos tus resultados
 	printf("\n\nAhora podras ver tu eleccion en el fichero ""minijuego-prediccion.txt""");
 	
-	fclose(pf11); //Cierra el fichero
+	fclose(pf18); //Cierra el fichero
 	 	break;
 	 //Aqui comienza el ultimo juego de la eleccion del once ideal	
 	case 'o':
 	case 'O':;
 	
 	
-	FILE *f12; 
+	FILE *f19; 
 	
-	f12 = fopen("onceideal(w).txt", "w"); //Crea el fichero
+	f19 = fopen("onceideal(w).txt", "w"); //Crea el fichero
 	
-	if(f12 == NULL){ //Salta un error si no se ha podido crear el fichero
+	if(f19 == NULL){ //Salta un error si no se ha podido crear el fichero
 		printf("ERROR");
 	}	
 
 	fflush(stdin);
 
-		FILE * f13 = fopen("portero.txt","r");	
-	if(f13 == NULL ){
+		FILE * f20 = fopen("portero.txt","r");	
+	if(f20 == NULL ){
 		printf("ERROR\n");
 		return 0;
 }
 		
 	while(aux != EOF){
-		aux=fgetc(f13);
+		aux=fgetc(f20);
 		printf("%c",aux);
 }
 	printf("\n");
-		fclose(f13);
+		fclose(f20);
     printf("Elija portero:\n");
 	gets(jugadores1);
 	fflush(stdin);
 	system("pause");
 
-	FILE * f14 = fopen("defensa.txt","r");	
-	if(f14 == NULL ){
+	FILE * f21 = fopen("defensa.txt","r");	
+	if(f21 == NULL ){
 		printf("ERROR\n");
 		return 0;
 }
 		
 	while(aux2 != EOF){
-		aux2=fgetc(f14);
+		aux2=fgetc(f21);
 		printf("%c",aux2);
 }
 	printf("\n");
-		fclose(f14);
+		fclose(f21);
 	system("cls");
 	printf("Elija el lateral derecho: \n");
 	gets(jugadores2);
@@ -1251,18 +1251,18 @@ switch (op){
 	fflush(stdin);
 	system("pause");
 
-		FILE * f15 = fopen("mediocentro.txt","r");	
-	if(f15 == NULL ){
+		FILE * f22 = fopen("mediocentro.txt","r");	
+	if(f22 == NULL ){
 		printf("ERROR\n");
 		return 0;
 }
 		
 	while(aux3 != EOF){
-		aux3=fgetc(f15);
+		aux3=fgetc(f22);
 		printf("%c",aux3);
 }
 	printf("\n");
-		fclose(f15);
+		fclose(f22);
 		
 	system("cls");
 
@@ -1275,18 +1275,18 @@ switch (op){
 	fflush(stdin);
 	system("pause");
 
-		FILE * f16 = fopen("delantero.txt","r");	
-	if(f16 == NULL ){
+		FILE * f23 = fopen("delantero.txt","r");	
+	if(f23 == NULL ){
 		printf("ERROR\n");
 		return 0;
 }
 		
 	while(aux4 != EOF){
-		aux4=fgetc(f16);
+		aux4=fgetc(f23);
 		printf("%c",aux4);
 }
 	printf("\n");
-		fclose(f16);
+		fclose(f23);
 	
 	system("cls");
 
@@ -1308,10 +1308,10 @@ switch (op){
 			  	 printf("%s\t",jugadores9);    printf("%s\t",jugadores10);   printf("%s\n",jugadores11);
 			  	 
 			  	 
-			fprintf(f12,"          %s\n",jugadores1);
-			fprintf(f12,"%s\t",jugadores2); fprintf(f12,"%s\t",jugadores3);    fprintf(f12,"%s\t",jugadores4);   fprintf(f12,"%s\n",jugadores5);
-              fprintf(f12,"%s\t",jugadores6);    fprintf(f12,"%s\t",jugadores7);   fprintf(f12,"%s\n",jugadores8);		
-			  	 fprintf(f12,"%s\t",jugadores9);    fprintf(f12,"%s\t",jugadores10);   fprintf(f12,"%s\n",jugadores11);
+			fprintf(f19,"          %s\n",jugadores1);
+			fprintf(f19,"%s\t",jugadores2); fprintf(f19,"%s\t",jugadores3);    fprintf(f19,"%s\t",jugadores4);   fprintf(f19,"%s\n",jugadores5);
+              fprintf(f19,"%s\t",jugadores6);    fprintf(f19,"%s\t",jugadores7);   fprintf(f19,"%s\n",jugadores8);		
+			  	 fprintf(f19,"%s\t",jugadores9);    fprintf(f19,"%s\t",jugadores10);   fprintf(f19,"%s\n",jugadores11);
 			  	
 	printf("\n");
 
@@ -1320,7 +1320,7 @@ switch (op){
 	printf("\n");
 
 
-	fclose(f12);//Cierra el fichero creado
+	fclose(f19);//Cierra el fichero creado
 
 	printf("\n");
 	
