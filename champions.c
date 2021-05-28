@@ -37,10 +37,21 @@
 	char jugadores11[50];
 	
 //Declaracion de la funcion 
-void imprimirBanner(){
-		printf("Si quiere ver estadisticas generales del grupo pulse 5:\n");
-		printf("Si quiere ver los resultados de los equipos en la fase de grupos y la clasificacion del grupo pulse 6:\n");
+void imprimirMenu(){
+	printf("Si quiere ver estadisticas generales del grupo pulse 5:\n");
+	printf("Si quiere ver los resultados de los equipos en la fase de grupos y la clasificacion del grupo pulse 6:\n");
 }
+
+void imprimirBanner(){
+	printf("\t \t BIENVENIDO AL CONSULTORIO DE INFORMACION DE LA LIGA DE CAMPEONES\n");
+	
+	printf("\n---->Seleccione una de estas opciones: \n");
+
+	printf("Si quiere consultar la informacion de la champions pulse la tecla 1\n");
+	printf("Si quiere probar alguno de nuestros juegos pulse la tecla 2\n"); 	
+
+}
+
 
 int numeroAlAzar(int limiteSuperior, int limiteInferior)
 {
@@ -94,14 +105,12 @@ do{
 	char letra,op,el;
 	int eleccion,opcion,jugadores;
 	int i, j, equipo, cont=0;
-	printf("\t \t BIENVENIDO AL CONSULTORIO DE INFORMACION DE LA LIGA DE CAMPEONES\n");
 
 
-	//Menu de opciones
-	printf("\n---->Seleccione una de estas opciones: \n");
- 	
- 	printf("Si quiere consultar la informacion de la champions pulse la tecla 1\n");
- 	printf("Si quiere probar alguno de nuestros juegos pulse la tecla 2\n"); 
+	//Menu de opciones (en una funcion)
+	
+	imprimirBanner();
+	
 	scanf("%d",&eleccion);
 	fflush(stdin);
 	 
@@ -142,7 +151,7 @@ switch (op){
 
 		system("cls"); //Borra todo lo anterior en el compilador
 				
-		printf("Has elegido el Grupo A, estos son los equipos que componen el Grupo:\n\n");
+		printf("Ha elegido el grupo que contiene a los siguientes equipos:\n\n");
 		for(i=0; i<cont; i++){ //Muestra los equipos del Grupo A
 			printf("%d. %s", i+1, vector[i].nombre);
 			}
@@ -155,7 +164,7 @@ switch (op){
 		printf("Alineacion Atletico de Madrid pulse 2\n");
 		printf("Alineacion Lokomotiv Moskva pulse 3\n");
 		printf("Alineacion Salzburg pulse 4\n");
-		imprimirBanner();
+		imprimirMenu();
 		scanf("%d",&equipo);
 		fflush(stdin);
 		
@@ -166,7 +175,7 @@ switch (op){
 			printf("      Kimmich       Goretzka\n");
 			printf("Sane         Muller        Coman\n");
 			printf("           Lewandowski\n");
-			printf("\n");
+			printf("\n\n");
 					
 		}
         	else if(equipo==2){
@@ -174,21 +183,23 @@ switch (op){
 			printf("Trippier\t"); printf("Savic\t");    printf("Felipe\t");   printf("Hermoso\n");	
 			printf("Llorente    Koke        Saul        Carrasco\n");
 			printf("          Correa        Suarez\n");
-					
+			printf("\n\n");	
+	
 		}
 			else if(equipo==3){
 			printf("                      Guilherme\n");
 			printf("Zhivoglyadov\t");    printf("Corluka\t");       printf("Murillo\t");      printf("Rajkovic\n");	
 			printf("Lisakovich     Magkeev       Lystsov        Rybus\n");
 			printf("           Ze Luis        Eder\n");
-				
+			printf("\n\n");	
+	
 		}
 			else if(equipo==4){
 			printf("                       Stankovic\n");
 			printf("Kristensen\t");    printf("Andre Ramalho\t");       printf("Wober\t");      printf("Ulmer\n");	
 			printf("Mwepu    Camara       Junuzovic        Szoboszlai\n");
 			printf("             Berisha        Koita\n");
-			printf("\n");
+			printf("\n\n");
 				
 		}
 			else if(equipo==5){
@@ -258,46 +269,55 @@ switch (op){
 		for(i=0; i<cont; i++){ 
 			printf("%d. %s", i+1, vector[i].nombre);
 			}
-		printf("Borussia Monchedgladbach\n Real Madrid\n Inter de Milan\n Shaktar Donetsk\n");
+		printf(" Borussia Monchedgladbach\n Real Madrid\n Inter de Milan\n Shaktar Donetsk\n");
 		printf("\n");
 		printf("\n");
 		printf("\n");
 		printf("Elija equipo:\n");
 		printf("Real Madrid pulse 1\n");
-		printf(" Shaktar Donetsk pulse 2\n");
+		printf("Shaktar Donetsk pulse 2\n");
 		printf("Inter de Milan pulse 3\n");
 		printf("Borussia Monchedgladbach pulse 4\n");
 		printf("\n");
-		imprimirBanner();
+		imprimirMenu();
 		scanf("%d",&equipo);
 		fflush(stdin);
 		if(equipo==1){
 			printf("            Courtois\n");
 			printf("Carvajal\t"); printf("Ramos\t");    printf("Varane\t");   printf("Mendy\n");
 			printf("      Modric      casemiro      Kroos\n");
-			printf(" Asensio        Benzema        Hazard\n");					
+			printf(" Asensio        Benzema        Hazard\n");	
+			printf("\n\n");	
+				
 		}
-		if(equipo==2){
+			else if(equipo==2){
 			printf("                  Trubin\n");
 			printf("Dodo\t"); printf("Kryvtsov\t");    printf("Khocholava\t");   printf("Matviyenko\n");
 			printf("       Maycon            Stepanenko\n");
 			printf("  Tete           Alan Patrick          Solomon\n");
-			printf("                    Dentinho\n");					
+			printf("                    Dentinho\n");
+			printf("\n\n");	
+					
 		}
-			if(equipo==3){
+			else if(equipo==3){
 			printf("                  Handanovic\n");
 			printf("Skriniar\t"); printf("De Vrij\t");    printf("Bastoni\n");  
 			printf("  Hakimi      Barella     Brozovic       Gagliardini      Young \n");
-			printf("             Lukaku       Lautaro Martinez\n");					
+			printf("             Lukaku       Lautaro Martinez\n");	
+			printf("\n\n");	
+				
 		}
-			if(equipo==4){
+			else if(equipo==4){
 			printf("             Sommer\n");
 			printf("Lainer\t"); printf("Ginter\t");    printf("Elvedi\t");   printf("Wendt\n");
 			printf("      Kramer       Neuhaus\n");
 			printf("Plea         Stindl        Thuram\n");
 			printf("            Embolo\n");
+			printf("\n\n");	
+
 					
 		}
+
 			else if(equipo==5){
 				
 				jugador stats[100];
@@ -359,13 +379,13 @@ switch (op){
 	case 'C':
 	case 'c':
 		
-			system("cls"); 
+		system("cls"); 
 				
-		printf("Has elegido el Grupo C, estos son los equipos que componen el Grupo:\n\n");
+		printf("Ha elegido el grupo que contiene a los siguientes equipos:\n\n");
 		for(i=0; i<cont; i++){ 
 			printf("%d. %s", i+1, vector[i].nombre);
 			}
-		printf("Manchester City\n Olympique Marseille\n FC Porto\n Olympiacos\n");
+		printf(" Manchester City\n Olympique Marseille\n FC Porto\n Olympiacos\n");
 		printf("\n");
 		printf("\n");
 		printf("Elija equipo:\n");
@@ -373,7 +393,7 @@ switch (op){
 		printf("Olympique Marseille pulse 2\n");
 		printf("FC Porto pulse 3\n");
 		printf("Olympiacos pulse 4\n");
-		imprimirBanner();
+		imprimirMenu();
 		scanf("%d",&equipo);
 		fflush(stdin);
 		if(equipo==1){
@@ -381,26 +401,33 @@ switch (op){
 			printf("Walker\t"); printf("Laporte\t");    printf("\tEric Garcia\t");   printf(" Benjamin Mendy\n");
 			printf("             Rodri           Gundogan\n");
 		    printf("       Mahrez        Bernardo Silva      sterling\n");
-			printf("                      Aguero\n");					
+			printf("                      Aguero\n");
+			printf("\n\n");	
+					
 		}
-		if(equipo==2){
+			else if(equipo==2){
 			printf("                   Mandanda\n");
 			printf("Sakai\t"); printf("Alvaro\t");    printf("Balerdi\t");   printf("\tNagatomo\n");
 			printf("  Sanson          Kamara         Gueye\n");
-			printf("    Thauvin        Germain            Payet\n");					
+			printf("    Thauvin        Germain            Payet\n");		
+			printf("\n\n");	
+			
 		}
-			if(equipo==3){
+			else if(equipo==3){
 			printf("                    Diogo Costa\n");
 			printf("Nanu\t"); printf("Mbemba\t");    printf("Leite\t");  printf("Sanusi\n");
 			printf("  Baro      Grujic      Otavio \n");
 			printf("  Joao Mario     Toni Martinez      Felipe Anderson\n");					
 		}
-			if(equipo==4){
+			else if(equipo==4){
 			printf("                  Jose Sa\n");
 			printf("Rafinha\t"); printf("\tRuben Semedo\t");    printf("Cisse\t");   printf("Holebas\n");
 			printf("         Mvila       Camara       Bouchalakis\n");
-			printf("      Vrousai         El-Arabi        Masouras\n");			
+			printf("      Vrousai         El-Arabi        Masouras\n");	
+			printf("\n\n");	
+		
 		} 
+
 			else if(equipo==5){
 				jugador stats[100];
 
@@ -465,7 +492,7 @@ switch (op){
 		for(i=0; i<cont; i++){ 
 			printf("%d. %s", i+1, vector[i].nombre);
 			}
-		printf("Ajax\n Atalanta\n Liverpool\n Midtjylland\n");
+		printf(" Ajax\n Atalanta\n Liverpool\n Midtjylland\n");
 		printf("\n");
 		printf("\n");
 		printf("Elija equipo:\n");
@@ -473,35 +500,45 @@ switch (op){
 		printf("Atalanta pulse 2\n");
 		printf("Liverpool pulse 3\n");
 		printf("Midtjylland pulse 4\n");
-		imprimirBanner();
+		imprimirMenu();
 		scanf("%d",&equipo);
 		fflush(stdin);
 		if(equipo==1){
 			printf("                      Onana\n");
 			printf("Mazraoui\t"); printf("Schuurs\t");    printf("\tBlind\t");   printf("Tagliafico\n");
 			printf("      Klaassen          Labyad           Gravenberch\n");
-		    printf("         Neres        Traore      Tadic\n");					
+		    printf("         Neres        Traore      Tadic\n");
+			printf("\n\n");	
+					
 		}
-		if(equipo==2){
+			else if(equipo==2){
 			printf("                   Sportiello\n");
 		    printf("Djimsiti\t");    printf("Romero\t");   printf("\tPalomino\n");
 			printf("          Pessina         Freuler\n");
 			printf("    Hateboer       ilicic            Gosens\n");
-			printf("          Muriel         Zapata\n");						
+			printf("          Muriel         Zapata\n");
+			printf("\n\n");	
+						
 		}
-			if(equipo==3){
+			else if(equipo==3){
 			printf("                    Alisson\n");
 		    printf("\tArnold\t"); printf("Matip\t");    printf("Joe Gomez\t");  printf("Robertson\n");
 			printf("   Thiago Alcantara      Wijnaldum      Fabinho \n");
-		  	printf("        Salah     Firmino      Mane\n");					
+		  	printf("        Salah     Firmino      Mane\n");
+			printf("\n\n");	
+					
 		}
-			if(equipo==4){
+			else if(equipo==4){
 			printf("                  Hansen\n");
 			printf("Cools\t"); printf("\tSviatchenko\t");    printf("Scholz\t");   printf("Paulinho\n");
 			printf("           Cajuste      Onyeka\n");
 			printf("     Dreyer         Evander        Mabil\n");
-			printf("                   Sory  \n");			
+			printf("                   Sory  \n");
+			printf("\n\n");	
+			
+			
 		} 
+
 			else if(equipo==5){
 							jugador stats[100];
 
@@ -562,11 +599,11 @@ switch (op){
 		
 			system("cls"); 
 				
-		printf("Has elegido el Grupo E, estos son los equipos que componen el Grupo:\n\n");
+		printf(" Ha elegido el Grupo E, estos son los equipos que componen el Grupo:\n\n");
 		for(i=0; i<cont; i++){
 			printf("%d. %s", i+1, vector[i].nombre);
 			}
-		printf("Chelsea FC\n Sevilla FC\n Stade Rennais\n FK Krasnodar\n");
+		printf(" Chelsea FC\n Sevilla FC\n Stade Rennais\n FK Krasnodar\n");
 		printf("\n");
 		printf("\n");
 		printf("\n");
@@ -575,7 +612,7 @@ switch (op){
 		printf("Sevilla pulse 2\n");
 		printf("Stade Rennais pulse 3\n");
 		printf("Krasnodar pulse 4\n");
-		imprimirBanner();
+		imprimirMenu();
 		scanf("%d",&equipo);
 		fflush(stdin);
 		if(equipo==1){
@@ -584,28 +621,35 @@ switch (op){
 			printf("      Kante       Jorginho\n");
 			printf("Mount         Havertz        Ziyech\n");
 			printf("              Werner\n");
+			printf("\n\n");	
+
 					
 		}
-        	if(equipo==2){
+        	else if(equipo==2){
 			printf("                     Bono\n");
 			printf("Navas\t"); printf("Kounde\t");    printf("Diego Carlos\t");   printf("Escudero\n");	
 			printf("       Rakitic       Fernando        Jordan\n");
 			printf("       Ocampos      En-Nesyri        Suso\n");
+			printf("\n\n");	
+
 					
 		}
-			if(equipo==3){
+			else if(equipo==3){
 			printf("                          Gomis\n");
 			printf("Traore\t");    printf("Da Silva\t");       printf("Aguerd\t");      printf("\tDalbert Henrique\n");	
 			printf("          Bourigeaud       N`zonzi        Camavinga\n");
 			printf("       Del Castillo         Guirassy        Terrier\n");
+			printf("\n\n");	
+
 				
 		}
-			if(equipo==4){
+			else if(equipo==4){
 			printf("                          Safonov\n");
 			printf("Petrov\t");    printf("\tKaio Pantaleao\t");       printf("\tSorokin\t");      printf("\tChernov\n");	
 			printf("        Olsson       Vilhena        Utkin\n");
 			printf("       Smolnikov         Berg        Ramirez\n");
-				
+			printf("\n\n");		
+
 		}
 			else if(equipo==5){
 		jugador stats[100];
@@ -680,7 +724,7 @@ switch (op){
 		printf("Zenit pulse 2\n");
 		printf("Borussia Dortmund pulse 3\n");
 		printf("Brujas pulse 4\n");
-		imprimirBanner();
+		imprimirMenu();
 		scanf("%d",&equipo);
 		fflush(stdin);
 		if(equipo==1){
@@ -688,30 +732,36 @@ switch (op){
 		    printf("\tPatric\t");    printf("\tLuiz Felipe\t");   printf("\tAcerbi\n");
 			printf("Marusic    Milinkovic-Savic      Lucas Leiva        Luis Alberto       Fares\n");
 			printf("                       Correa      Inmobile\n");
+			printf("\n\n");	
+
 		}
-        	if(equipo==2){
+        	else if(equipo==2){
 			printf("                       Kerzhakov\n");
 			printf("Karavaev\t"); printf("Lovren\t");    printf("Rakitsky\t");   printf("Krugovoi\n");	
 			printf("Kuzyaev      Ozdoev        Barrios        Driussi\n");
 			printf("            Dzyuba        Azmoun\n");
+			printf("\n\n");	
+
 					
 		}
-			if(equipo==3){
+			else if(equipo==3){
 			printf("                      Hitz\n");
 		    printf("\tPiszczek\t");       printf("\tHummels\t");      printf("\tAkanji\n");
 			printf("            Witsel        Bellingham\n");	
 			printf("  Meunier     Sancho       Reus        Guerreiro\n");
 			printf("                     Haaland\n");
+			printf("\n\n");	
+
 				
 		}
-				if(equipo==4){
+			else if(equipo==4){
 			printf("                       Mignolet\n");
 		    printf("Clinton Mata\t");       printf("\tKossounou\t");      printf("\tDeli\n");	
 			printf("   Diatta    Vormer       Rits      Vanaken      Sobol\n");
 			printf("             De Ketelaere        Dennis\n");
-				
+			printf("\n\n");
 		}
-		else if(equipo==5){
+			else if(equipo==5){
 	
 				jugador stats[100];
 
@@ -783,7 +833,7 @@ switch (op){
 		printf("Juventus pulse 2\n");
 		printf("Dinamo Kiev pulse 3\n");
 		printf("Ferencvarosi pulse 4\n");
-		imprimirBanner();
+		imprimirMenu();
 		scanf("%d",&equipo);
 		fflush(stdin);
 		if(equipo==1){
@@ -791,29 +841,37 @@ switch (op){
 			printf("Dest\t"); printf("\tPique\t");    printf("\tLenglet\t");   printf("\tJordi Alba\n");
 			printf("            Busquets       De Jong\n");
 			printf("    Griezmann         Pedri        Dembele\n");
-			printf("                  Messi\n");				  
+			printf("                     Messi\n");
+			printf("\n\n");	
+				  
 		}
-        	if(equipo==2){
+        	else if(equipo==2){
 			printf("                       Szczesny\n");
 		    printf("\tDe Ligt\t");    printf("\tBonucci\t");   printf("\tDanilo\n");
 			printf("             Ramsey        Mckennie\n");	
 			printf("     Cuadrado        Arthur        Alex Sandro\n");
 			printf("            Ronaldo        Morata\n");
+			printf("\n\n");	
+
 					
 		}
-			if(equipo==3){
+			else if(equipo==3){
 			printf("                           Boyko\n");
 			printf("Kedziora\t");    printf("Zabarnyi\t");       printf("Popov\t");      printf("Karavaev\n");	
 			printf("          Buyalsky       Sydorchuk        Sharparenko\n");
-			printf("        Tsygankov     Supriaha        De Pena\n");		
+			printf("        Tsygankov       Supriaha        De Pena\n");
+			printf("\n\n");	
+		
 		}
-			if(equipo==4){
+			else if(equipo==4){
 			printf("                         Dibusz\n");
 			printf("Lovrencsics\t");    printf("Blazic\t");       printf("Kovacevic\t");      printf("Heister\n");	
 			printf("                   Somalia        Kharatin\n");
 			printf("           Zubkov          Siger        Nguen\n");
 			printf("                          Isael\n");	
+			printf("\n\n");
 		}
+		
 			else if(equipo==5){
 				
 				jugador stats[100];
@@ -887,7 +945,7 @@ switch (op){
 		printf("Manchester United pulse 2\n");
 		printf("RB Leipzig pulse 3\n");
 		printf("Istanbul Basaksehir pulse 4\n");
-		imprimirBanner();
+		imprimirMenu();
 		scanf("%d",&equipo);
 		fflush(stdin);
 		if(equipo==1){
@@ -895,30 +953,36 @@ switch (op){
 			printf("Florenzi\t"); printf("Marquinhos\t");    printf("Kimpembe\t");   printf("Kurzawa\n");
 			printf("          Herrera      verrati         Gueye\n");
 			printf("           Di Maria      Mbappe      Neymar\n");
+			printf("\n\n");	
+
 					
 		}
-        	if(equipo==2){
+        	else if(equipo==2){
 			printf("                        De Gea\n");
 			printf("\tMaguire\t");    printf("\tLindelof\t");   printf("Tuanzebe\n");	
 			printf("                Pogba       Fred\n");
 			printf("     Telles    Bruno Fernandes      Wan-Bissaka\n");
 			printf("           Rashford       Martial\n");
+			printf("\n\n");	
+
 					
 		}
-			if(equipo==3){
+			else if(equipo==3){
 			printf("                      Gulacsi\n");
 		    printf("\tHalstenberg\t");       printf("\tUpamecano\t");      printf("Konate\n");
 			printf("                   Nkunku        Kampl\n");	
 			printf("    Angelino     Forsberg       Dani Olmo        Henrichs\n");
 			printf("                       Poulsen\n");
+			printf("\n\n");	
+
 				
 		}
-			if(equipo==4){
+			else if(equipo==4){
 			printf("                                 Gunok\n");
 			printf("\tBolingoli\t");    printf("Epureanu\t");       printf("Skrtel\t");      printf("\tJunior Caicara\n");	
 			printf("            Turuc    mKahveci     Topal    Rafael    Visca\n");
 			printf("                            Crivelli\n");
-				
+			printf("\n\n");	
 		}
 			else if(equipo==5){
 			
